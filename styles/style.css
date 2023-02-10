@@ -1,0 +1,163 @@
+:root{
+    /* cores */
+    --cor-principal: #EA1C81;
+    --cor-topo: #D8F1FB82;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-fundo: #FAFBFF;
+
+}
+
+*{
+    /* tirar margem */
+    margin: 0px;
+    padding: 0px;
+    transition: all 1s;    /* todos os meus componentes terão transição*/
+    box-sizing: border-box;
+}
+
+#header{
+    background-color: var(--cor-topo);  /* mudar a cor */
+    display: flex;   /* deixar a escrita ao lado/flexível */ 
+    justify-content: space-between;  /* colocar espaço ente a logo e escrita */
+     align-items: center;  /* alinhar ao eixo y/ centralizar */
+
+}
+#header nav a{
+    text-decoration: none; /* tirar a sublimação embaixo da escrita */
+    color: var(--cor-preta);  /* mudar a cor da letra */
+}
+
+#header nav a:hover{
+    background-color: var(--cor-principal);  /* quando eu passar o mouse sobre a palavra ela fica grifada com outra cor */
+    padding: 15px;  /* espaçamento interno */
+    color: var(--cor-branca);  /* quando passar o mouse sobre a palavra a letra vai mudar de cor */
+    border-radius: 20px;  /* borda arredondada */
+    /* font-weight: 700;-pra mudar na grossura da fonte */
+    /* font-weight: bold;-pra deixar a escrita em negrito */
+}
+
+.marginLateral{
+    margin: 0px 20px;  /* espaçamento entre as palavras */
+}
+
+main #banner{
+    background-image: url("../img/Section\ -\ Banner.png"); /*colocar uma imagem de fundo*/
+    height: calc(100vh - 89px) ; /* fazer com que a imagem preencha a tela toda */
+    background-repeat: no-repeat; 
+    background-position: center center; /* centralizar os eixos x e y */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-principal);
+}
+main #banner button{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+}
+main #banner button:hover{
+    cursor: pointer;
+}
+
+.marginCimaBaixo{
+    margin: 20px 0px;
+}
+
+main #banner h1{
+    color: var(--cor-principal);
+    font-size: 2em;
+}
+main #banner h2{
+    color: var(--cor-preta);
+}
+
+main #banner button{
+    color: var(--cor-branca);
+    padding: 15px;
+    background-color: var(--cor-principal);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#header, main #banner button, #header nav a:hover, #bemVindo div, 
+footer, 
+main #form #form-formulario form{
+    padding: 15px;
+}
+ 
+
+#bemVindo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#bemVindo #bemVindo-boasVindas h3{ 
+    margin-bottom: 10px;
+}
+
+main #beneficio {
+    background-color: var(--cor-fundo);
+}
+
+main #beneficio #beneficios-nossosBeneficios, main #beneficio, #bemVindo #bemVindo-boasVindas h3{
+    color: var(--cor-principal);
+}
+
+main #beneficio #beneficios-servicos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main #form #form-texto, 
+main #beneficio #beneficios-nossosBeneficios, main #beneficio #beneficios-servicos, #form-formulario{
+    text-align: center;
+}
+
+main #form #form-formulario form,
+main #form-formulario form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+main #form #form-formulario form input,
+main #form-formulario form input{
+    display: block;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+main #form #form-formulario form button,
+main #formulario-submit {
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 280px;
+    cursor: pointer;
+}
+
+main #form #form-formulario{
+    background-image: url(../img/dog.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+footer{
+    background-color: var(--cor-topo);
+    text-align: center;
+}
+
