@@ -115,7 +115,7 @@ main #beneficio #beneficios-servicos{
 }
 
 main #form #form-texto, 
-main #beneficio #beneficios-nossosBeneficios, main #beneficio #beneficios-servicos, #form-formulario{
+main #beneficio #beneficios-nossosBeneficios, main #beneficio #beneficios-servicos{
     text-align: center;
 }
 
@@ -127,8 +127,7 @@ main #form-formulario form {
     flex-direction: column; 
 }
 
-main #form #form-formulario form input,
-main #form-formulario form input{
+main #form #form-formulario form input{
     display: block;
     padding: 8px;
     border: none;
@@ -139,8 +138,7 @@ main #form-formulario form input{
     margin-bottom: 10px;
 }
 
-main #form #form-formulario form button,
-main #formulario-submit {
+main #form #form-formulario form button{
     padding: 8px;
     border: none;
     background-color: var(--cor-principal);
@@ -161,3 +159,13 @@ footer{
     text-align: center;
 }
 
+main #form #form-texto form input{
+    display: block;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+}
